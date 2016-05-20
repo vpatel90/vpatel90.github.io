@@ -427,39 +427,51 @@ body {
     transform: none;
     margin-left: 0;
     opacity: 1; } }
-/* line 35, site.css.scss */
+/* line 37, site.css.scss */
+.logo {
+  color: #75ADD2;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2em;
+  position: relative;
+  top: 1em;
+  left: 0.75em;
+  transition: all 0.3s ease;
+  animation: fadeIn 2s; }
+
+/* line 49, site.css.scss */
 .nav {
-  width: 18.5em;
-  margin: 0 auto; }
-  /* line 38, site.css.scss */
+  margin-top: -1em; }
+  /* line 51, site.css.scss */
   .nav .underline {
     animation: fadeIn 3s;
     position: relative;
-    top: -1.2em;
+    top: 0em;
     display: inline-block;
     height: 3px;
     width: 4em;
     background-color: #75ADD2;
     left: 0.5em;
     transition: all 0.15s ease-out; }
-  /* line 49, site.css.scss */
+  /* line 62, site.css.scss */
   .nav ul {
+    width: 18.5em;
+    margin: 0 0 0 auto;
     padding: 0; }
-    /* line 51, site.css.scss */
+    /* line 66, site.css.scss */
     .nav ul .home {
       animation-duration: 1s; }
-    /* line 54, site.css.scss */
+    /* line 69, site.css.scss */
     .nav ul .projects {
       animation-duration: 0.5s; }
-    /* line 57, site.css.scss */
+    /* line 72, site.css.scss */
     .nav ul .contact {
       animation-duration: 0.2s; }
-    /* line 61, site.css.scss */
+    /* line 76, site.css.scss */
     .nav ul li {
       animation: slideIn;
       display: inline-block;
       margin: 0 20px; }
-      /* line 65, site.css.scss */
+      /* line 80, site.css.scss */
       .nav ul li a {
         text-decoration: none;
         font-family: 'Lato', sans-serif;
@@ -467,12 +479,12 @@ body {
         font-size: 0.9em;
         letter-spacing: 0.09em; }
 
-/* line 76, site.css.scss */
+/* line 91, site.css.scss */
 header {
   width: 9.845em;
-  margin: 0 auto;
+  margin: 0 auto 0 10%;
   padding-top: 0.1em; }
-  /* line 80, site.css.scss */
+  /* line 95, site.css.scss */
   header h1 {
     animation: slideIn 2s;
     font-weight: lighter; }
@@ -484,7 +496,7 @@ header {
     opacity: 0; }
   to {
     opacity: 1; } }
-/* line 102, site.css.scss */
+/* line 117, site.css.scss */
 .profile-pic img {
   animation: fadeIn 4s;
   position: absolute;
@@ -496,7 +508,7 @@ header {
   box-shadow: 0px 0px 3px 1px #777;
   transition: all 0.5s ease; }
 
-/* line 115, site.css.scss */
+/* line 130, site.css.scss */
 article {
   animation: fadeIn 4s;
   padding: 2em;
@@ -505,13 +517,30 @@ article {
   color: #404040;
   transition: all 0.3s ease; }
 
+@media (max-width: 322px) {
+  /* line 141, site.css.scss */
+  .logo {
+    opacity: 0; } }
+@media (max-width: 380px) {
+  /* line 147, site.css.scss */
+  .logo {
+    top: 1.15em;
+    font-size: 1.5em; } }
 @media (min-width: 600px) {
-  /* line 126, site.css.scss */
+  /* line 155, site.css.scss */
+  header {
+    margin: 0 auto; }
+
+  /* line 160, site.css.scss */
+  .nav ul {
+    margin: 0 auto; }
+
+  /* line 164, site.css.scss */
   article {
     padding: 2em 8em;
     animation: fadeIn 3s; }
 
-  /* line 132, site.css.scss */
+  /* line 170, site.css.scss */
   .profile-pic img {
     animation: fadeIn 3s;
     position: absolute;
@@ -522,17 +551,33 @@ article {
     width: 5em;
     box-shadow: 0px 0px 3px 2px #777; } }
 @media (min-width: 992px) {
-  /* line 146, site.css.scss */
-  article {
-    padding: 2em 14em 2em 20em; }
+  /* line 184, site.css.scss */
+  .logo {
+    left: 5em; }
 
-  /* line 150, site.css.scss */
-  .profile-pic img {
-    animation: fadeIn 3s;
-    position: absolute;
-    top: 12em;
-    left: 8em;
-    border-radius: 50%;
-    height: 8em;
-    width: 8em;
-    box-shadow: 0px 0px 3px 2px #777; } }
+  /* line 188, site.css.scss */
+  .hexagon-wrapper {
+    top: 1em;
+    left: 2em; }
+
+  /* line 192, site.css.scss */
+  article {
+    padding: 2em 10em 2em 20em; }
+
+  /* line 195, site.css.scss */
+  .profile-pic {
+    float: left; }
+    /* line 197, site.css.scss */
+    .profile-pic img {
+      animation: fadeIn 3s;
+      position: relative;
+      top: 2.5em;
+      left: 8em;
+      border-radius: 50%;
+      height: 8em;
+      width: 8em;
+      box-shadow: 0px 0px 3px 2px #777; } }
+@media (min-width: 1200px) {
+  /* line 211, site.css.scss */
+  body {
+    margin: 0 10%; } }
