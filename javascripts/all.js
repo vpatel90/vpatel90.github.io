@@ -324,10 +324,13 @@ ready = function() {
 	var contact = document.getElementById("contact").children[0];
 	var underline = document.getElementById("underline");
 
+	$('.logo').click(function(){
+		underline.style.left = "0.7em";
+		underline.style.width = "3em";
+	});
 	home.addEventListener('click', function(){
 		underline.style.left = "0.7em";
 		underline.style.width = "3em";
-
 	});
 
 	projects.addEventListener('click', function(){
