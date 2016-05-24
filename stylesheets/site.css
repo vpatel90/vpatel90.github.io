@@ -776,29 +776,34 @@ main {
     padding: 0em 3em; } }
 @media (min-width: 992px) {
   /* line 431, site.css.scss */
+  .hovereffect .overlay {
+    position: absolute;
+    top: 0; }
+
+  /* line 435, site.css.scss */
   .logo {
     left: 7em; }
 
-  /* line 436, site.css.scss */
+  /* line 440, site.css.scss */
   .project-article {
     margin-top: 0; }
 
-  /* line 441, site.css.scss */
+  /* line 445, site.css.scss */
   .nav ul {
     left: 17em; }
 
-  /* line 445, site.css.scss */
+  /* line 449, site.css.scss */
   .in-main1 {
     padding: 2em 4em 2em 17em; }
 
-  /* line 449, site.css.scss */
+  /* line 453, site.css.scss */
   .main1 {
     border-right: solid 7em #F46971; }
 
-  /* line 452, site.css.scss */
+  /* line 456, site.css.scss */
   .profile-pic {
     float: left; }
-    /* line 454, site.css.scss */
+    /* line 458, site.css.scss */
     .profile-pic img {
       animation: fadeIn 3s;
       position: relative;
@@ -809,6 +814,6 @@ main {
       width: 8em;
       box-shadow: 0px 0px 3px 2px #777; } }
 @media (min-width: 1200px) {
-  /* line 468, site.css.scss */
+  /* line 472, site.css.scss */
   body {
     margin: 0 10%; } }
