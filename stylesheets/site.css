@@ -471,7 +471,7 @@ body {
     display: inline-block;
     height: 3px;
     width: 3em;
-    background-color: #1F3145;
+    background-color: #F46971;
     left: 0.7em;
     transition: all 0.15s ease-out; }
   /* line 86, site.css.scss */
@@ -479,7 +479,7 @@ body {
     display: inline-block;
     position: relative;
     top: 2.8em;
-    right: -5.5em;
+    right: -3.5em;
     width: 17.14em;
     padding: 0; }
     /* line 93, site.css.scss */
@@ -565,13 +565,14 @@ main {
 
 /* line 196, site.css.scss */
 .main1 {
+  padding-top: 8em;
   min-height: 100vh;
   border-right: solid 2em #F46971; }
 
-/* line 201, site.css.scss */
+/* line 202, site.css.scss */
 .main2 {
   min-height: 100vh; }
-  /* line 205, site.css.scss */
+  /* line 206, site.css.scss */
   .main2 .go-to {
     position: relative;
     display: flex;
@@ -581,10 +582,10 @@ main {
     font-size: 2em;
     color: white;
     z-index: -1; }
-    /* line 209, site.css.scss */
+    /* line 210, site.css.scss */
     .main2 .go-to a {
       margin: 0 auto; }
-  /* line 221, site.css.scss */
+  /* line 222, site.css.scss */
   .main2 img {
     max-width: 330px;
     max-height: 103px;
@@ -592,45 +593,43 @@ main {
     margin-bottom: 0.75em;
     border-radius: 0.75em;
     cursor: pointer; }
-    /* line 229, site.css.scss */
+    /* line 230, site.css.scss */
     .main2 img:hover {
       -webkit-filter: blur(3px) brightness(0.85); }
-  /* line 235, site.css.scss */
+  /* line 236, site.css.scss */
   .main2 article {
-    padding-bottom: 2em; }
+    padding-bottom: 2em;
+    font-size: 0.95em; }
 
-/* line 241, site.css.scss */
+/* line 243, site.css.scss */
 .main3 .row {
   margin: 0 auto;
   padding-left: 2em; }
-  /* line 244, site.css.scss */
+  /* line 246, site.css.scss */
   .main3 .row div {
     padding-bottom: 2em; }
-/* line 248, site.css.scss */
+/* line 250, site.css.scss */
 .main3 .fa {
   color: #1F3145; }
-  /* line 250, site.css.scss */
-  .main3 .fa:hover {
-    color: #F46971; }
-/* line 254, site.css.scss */
+/* line 255, site.css.scss */
 .main3 a {
   text-decoration: none;
   color: #1F3145;
   display: inline-block; }
-  /* line 259, site.css.scss */
+  /* line 260, site.css.scss */
   .main3 a:hover {
     color: #F46971;
     -webkit-transform: scale(1.1); }
-/* line 265, site.css.scss */
+/* line 266, site.css.scss */
 .main3 .contact-text.first {
   padding-left: 2em; }
-/* line 268, site.css.scss */
+/* line 269, site.css.scss */
 .main3 .contact-text {
   position: relative;
   padding-left: 1.5em;
   top: -1em; }
 
-/* line 276, site.css.scss */
+/* line 277, site.css.scss */
 .hovereffect {
   width: 100%;
   height: 100%;
@@ -640,19 +639,19 @@ main {
   text-align: center;
   cursor: default; }
 
-/* line 286, site.css.scss */
+/* line 287, site.css.scss */
 .hovereffect .overlay {
   display: block;
   width: 100%;
   height: 90%;
-  max-width: 330px;
-  min-height: 100px;
+  max-width: 320px;
+  min-height: 105px;
   margin: 0 auto;
   margin-bottom: 0.75em;
   border-radius: 0.75em;
   position: relative;
   overflow: hidden;
-  top: -7em;
+  top: -8.5em;
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
@@ -663,14 +662,14 @@ main {
   -webkit-transition: all 0.2s 0.4s ease-in-out;
   transition: all 0.2s 0.4s ease-in-out; }
 
-/* line 310, site.css.scss */
+/* line 311, site.css.scss */
 .hovereffect img {
   display: block;
   position: relative;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in; }
 
-/* line 317, site.css.scss */
+/* line 318, site.css.scss */
 .hovereffect h2 {
   text-transform: uppercase;
   color: #fff;
@@ -680,14 +679,14 @@ main {
   padding: 10px;
   margin: 0;
   background: rgba(0, 0, 0, 0.6); }
-  /* line 325, site.css.scss */
+  /* line 326, site.css.scss */
   .hovereffect h2 a {
     color: #fff; }
-    /* line 327, site.css.scss */
+    /* line 328, site.css.scss */
     .hovereffect h2 a:hover {
       text-decoration: none; }
 
-/* line 334, site.css.scss */
+/* line 335, site.css.scss */
 .hovereffect a.info {
   display: inline-block;
   text-decoration: none;
@@ -703,11 +702,11 @@ main {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
-/* line 350, site.css.scss */
+/* line 351, site.css.scss */
 .hovereffect a.info:hover {
   box-shadow: 0 0 5px #fff; }
 
-/* line 354, site.css.scss */
+/* line 355, site.css.scss */
 .hovereffect:hover .overlay {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -717,7 +716,7 @@ main {
   -ms-transform: translate(0px, 0px);
   transform: translate(0px, 0px); }
 
-/* line 364, site.css.scss */
+/* line 365, site.css.scss */
 .hovereffect:hover h2 {
   -webkit-transform: translateY(0px);
   -ms-transform: translateY(0px);
@@ -725,7 +724,7 @@ main {
   -webkit-transition-delay: 0.5s;
   transition-delay: 0.5s; }
 
-/* line 372, site.css.scss */
+/* line 373, site.css.scss */
 .hovereffect:hover a.info {
   -webkit-transform: translateY(0px);
   -ms-transform: translateY(0px);
@@ -734,33 +733,33 @@ main {
   transition-delay: 0.3s; }
 
 @media (max-width: 322px) {
-  /* line 380, site.css.scss */
+  /* line 381, site.css.scss */
   .logo {
     opacity: 0; } }
 @media (max-width: 380px) {
-  /* line 386, site.css.scss */
+  /* line 387, site.css.scss */
   .logo {
     top: 1.15em;
     font-size: 1.5em; } }
 @media (min-width: 600px) {
-  /* line 394, site.css.scss */
+  /* line 395, site.css.scss */
   header {
     margin: 0 auto; }
 
-  /* line 399, site.css.scss */
+  /* line 400, site.css.scss */
   .nav ul {
     left: 6em; }
 
-  /* line 403, site.css.scss */
+  /* line 404, site.css.scss */
   .in-main1 {
     padding: 2em 6em;
     animation: fadeIn 3s; }
 
-  /* line 409, site.css.scss */
+  /* line 410, site.css.scss */
   .main1 {
     border-right: solid 5em #F46971; }
 
-  /* line 414, site.css.scss */
+  /* line 415, site.css.scss */
   .profile-pic img {
     animation: fadeIn 3s;
     position: absolute;
@@ -771,39 +770,40 @@ main {
     width: 5em;
     box-shadow: 0px 0px 3px 2px #777; }
 
-  /* line 425, site.css.scss */
-  .project-article {
-    padding: 0em 3em; } }
+  /* line 427, site.css.scss */
+  .main2 .project-article {
+    padding: 0em 3em;
+    font-size: 1.1em; } }
 @media (min-width: 992px) {
-  /* line 431, site.css.scss */
-  .hovereffect .overlay {
-    position: absolute;
-    top: 0; }
-
-  /* line 435, site.css.scss */
+  /* line 438, site.css.scss */
   .logo {
     left: 7em; }
 
-  /* line 440, site.css.scss */
+  /* line 443, site.css.scss */
   .project-article {
     margin-top: 0; }
 
-  /* line 445, site.css.scss */
+  /* line 448, site.css.scss */
   .nav ul {
     left: 17em; }
 
-  /* line 449, site.css.scss */
+  /* line 452, site.css.scss */
   .in-main1 {
     padding: 2em 4em 2em 17em; }
 
-  /* line 453, site.css.scss */
+  /* line 456, site.css.scss */
   .main1 {
     border-right: solid 7em #F46971; }
 
-  /* line 456, site.css.scss */
+  /* line 461, site.css.scss */
+  .main2 article.row {
+    max-height: 150px;
+    overflow: hidden; }
+
+  /* line 466, site.css.scss */
   .profile-pic {
     float: left; }
-    /* line 458, site.css.scss */
+    /* line 468, site.css.scss */
     .profile-pic img {
       animation: fadeIn 3s;
       position: relative;
@@ -814,6 +814,6 @@ main {
       width: 8em;
       box-shadow: 0px 0px 3px 2px #777; } }
 @media (min-width: 1200px) {
-  /* line 472, site.css.scss */
+  /* line 482, site.css.scss */
   body {
     margin: 0 10%; } }
