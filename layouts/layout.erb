@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "Vivek Patel" %></title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300|Merriweather:400,700,400italic|Roboto+Slab:100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheets/museo_300_macroman/stylesheet.css" type="text/css" charset="utf-8" />
+
+
+
+    <%= stylesheet_link_tag :site %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <nav class="nav">
+    <% link_to "#main1" do%>
+    <span class="logo">VNP</span>
+    <% end %>
+      <ul>
+        <li id="home" class="home"><%=link_to "Home", "#main1"%></li>
+        <li id="projects" class="projects"><%=link_to "Projects", "#main2" %></li>
+        <li id="contact" class="contact"><%=link_to "Contact", "#main3" %></li>
+         <div id="underline" class="underline"></div>
+
+      </ul>
+    </nav>
+    <%= yield %>
+
+
+  </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <%= javascript_include_tag :all %>
+
+</html>

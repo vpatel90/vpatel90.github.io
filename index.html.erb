@@ -1,0 +1,108 @@
+---
+title: Vivek Patel
+---
+<div class="spotlight"></div>
+
+<main id="main1" class="main1">
+<header>
+  <div><h1>Who Am I?</h1></div>
+</header>
+  <div class="profile-pic"><img src="https://avatars1.githubusercontent.com/u/6004526?v=3&s=460"></div>
+  <article class="in-main1">
+    <p>Hello and welcome to my page! My name is Vivek Patel and I am a web devloper based in Austin, TX.
+       I enjoy building all sorts of apps, ranging from small business sites to interactive web games!</p>
+    <p>I am a code school graduate from The Iron Yard, where I primarily learned Ruby on Rails. My skillset also includes
+       HTML, CSS, JavaScript, along with use of various libraries such as jQuery, React and others.</p>
+    <p>If you feel like I can assist you in anyway, feel free to reach out to me!</p>
+  </article>
+</main>
+
+<main id="main2" class="main2">
+<header>
+  <div><h1>My Work!</h1></div>
+</header>
+  <article class="row">
+  	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 image">
+
+  	<div class="hovereffect">
+  		<%= image_tag 'bluehair.png', class:'img-responsive' %>
+  		<div class="overlay">
+  		<h2> <%= link_to 'GitHub', 'https://github.com/vpatel90/redditapp' %> </h2>
+  			<%= link_to 'Live Site', 'http://blue-hair-app.herokuapp.com', class:'info' %>
+		</div>
+	</div>
+
+  	</div>
+  	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+  		<article class="project-article">
+  		Blue Hair is a Reddit clone and it was one of the first complete apps I made using Rails. This app's gave me an insight on pagination, creating custom routes, using polymorphic associations and user authentication.
+  		</article>
+  	</div>
+  </article>
+
+  <article class="row">	
+  	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 image">
+  	<div class="hovereffect">
+  	<%= image_tag 'bba.png', class:'img-responsive' %>
+  		<div class="overlay">
+  			<h2> <%= link_to 'GitHub', 'https://github.com/vpatel90/bba' %></h2>
+  			<%= link_to 'Live Site', 'http://bba-app.herokuapp.com', class:'info' %>
+  			</div>
+	</div>
+  	</div>
+  	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+  		<article class="project-article">
+  		BBA or Best Burgers of Austin was a group project where I was
+  		the back end developer. My group consisted of two frontend javascript developers and a designer. This showcases a complete rails API with all the necessary CRUD actions necessary for the project. This project was a great experience working with a team full of different skillsets.
+  		</article>
+  	</div>
+  </article>
+
+
+  <article class="row">	
+  	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 image">
+  	<div class="hovereffect">
+
+  	<%= image_tag 'plunder.png', class:'img-responsive' %>
+  		<div class="overlay">
+  		<h2> <%= link_to 'GitHub', 'https://github.com/vpatel90/Plunder' %> </h2>
+  		<%= link_to 'Live Site', 'http://playplunder.com/about', class:'info' %>
+  		</div>
+  		</div>
+
+  	</div>
+  	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+  		<article class="project-article">
+  		Plunder is a game based on a board game called Loot. This was
+  		my final project at The Iron Yard coding school. This is a complete multiplayer web-game built in 2 weeks. The game uses a Rails backend and a frontend built almost entirely in React. This project pushed my limits for the two weeks, I learned CSS animations, Rails Jobs, and wrote over a dozen React components.
+  		</article>
+  	</div>
+  </article>
+
+</main>
+
+<main id="main3" class="main3">
+	<header>
+	  <div><h1>Contact</h1></div>
+	</header>
+	<article class="row">
+
+  	<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 image">
+  		<% link_to 'https://github.com/vpatel90' do %>
+		<i class="fa fa-4x fa-github" aria-hidden="true"></i> <span class="contact-text first">  VPATEL90</span>
+		<% end %>
+	</div>
+
+  	<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 image">
+  		
+		<i class="fa fa-4x fa-envelope" aria-hidden="true"></i> <span class="contact-text"><%= mail_to 'VNP229@gmail.com', 'VNP229@gmail.com'%></span>
+	</div>
+
+  	<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 image">
+  		<% link_to 'https://twitter.com/vpatel90' do %>
+		<i class="fa fa-4x fa-twitter" aria-hidden="true"></i> <span class="contact-text">@VPATEL90</span>
+		<% end %>
+	</div>
+
+	</article>
+</main>
