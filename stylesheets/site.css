@@ -404,11 +404,12 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-/* line 6, site.css.scss */
+/* line 7, site.css.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  color: #1F3145; }
 
-/* line 10, site.css.scss */
+/* line 12, site.css.scss */
 body {
   font-family: 'Lato', sans-serif; }
 
@@ -427,10 +428,10 @@ body {
     transform: none;
     margin-left: 0;
     opacity: 1; } }
-/* line 37, site.css.scss */
+/* line 39, site.css.scss */
 .logo {
-  color: #75ADD2;
-  font-family: 'Roboto Slab', serif;
+  color: #1F3145;
+  font-family: 'museo300';
   font-size: 2em;
   position: relative;
   top: 1em;
@@ -438,56 +439,70 @@ body {
   transition: all 0.3s ease;
   animation: fadeIn 2s; }
 
-/* line 49, site.css.scss */
+/* line 51, site.css.scss */
 .nav {
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6em;
   margin-top: -1em; }
-  /* line 51, site.css.scss */
+  /* line 60, site.css.scss */
   .nav .underline {
     animation: fadeIn 3s;
     position: relative;
     top: 0em;
     display: inline-block;
     height: 3px;
-    width: 4em;
-    background-color: #75ADD2;
-    left: 0.5em;
+    width: 3em;
+    background-color: #1F3145;
+    left: 0.7em;
     transition: all 0.15s ease-out; }
-  /* line 62, site.css.scss */
+  /* line 71, site.css.scss */
   .nav ul {
-    width: 18.5em;
-    margin: 0 0 0 auto;
+    display: inline-block;
+    position: relative;
+    top: 2.8em;
+    right: -6.5em;
+    width: 16.14em;
     padding: 0; }
-    /* line 66, site.css.scss */
+    /* line 78, site.css.scss */
     .nav ul .home {
       animation-duration: 1s; }
-    /* line 69, site.css.scss */
+    /* line 81, site.css.scss */
     .nav ul .projects {
       animation-duration: 0.5s; }
-    /* line 72, site.css.scss */
+    /* line 84, site.css.scss */
     .nav ul .contact {
       animation-duration: 0.2s; }
-    /* line 76, site.css.scss */
+    /* line 88, site.css.scss */
     .nav ul li {
       animation: slideIn;
       display: inline-block;
-      margin: 0 20px; }
-      /* line 80, site.css.scss */
+      margin: 0 0.9em; }
+      /* line 92, site.css.scss */
       .nav ul li a {
         text-decoration: none;
         font-family: 'Lato', sans-serif;
-        color: black;
+        color: #1F3145;
         font-size: 0.9em;
         letter-spacing: 0.09em; }
+        /* line 98, site.css.scss */
+        .nav ul li a:hover {
+          color: #5f89b7; }
 
-/* line 91, site.css.scss */
+/* line 106, site.css.scss */
 header {
-  width: 9.845em;
+  width: 11.445em;
   margin: 0 auto 0 10%;
   padding-top: 0.1em; }
-  /* line 95, site.css.scss */
+  /* line 110, site.css.scss */
   header h1 {
     animation: slideIn 2s;
-    font-weight: lighter; }
+    font-weight: lighter;
+    font-size: 2.5em; }
 
 @keyframes fadeIn {
   from {
@@ -496,7 +511,7 @@ header {
     opacity: 0; }
   to {
     opacity: 1; } }
-/* line 117, site.css.scss */
+/* line 133, site.css.scss */
 .profile-pic img {
   animation: fadeIn 4s;
   position: absolute;
@@ -508,39 +523,219 @@ header {
   box-shadow: 0px 0px 3px 1px #777;
   transition: all 0.5s ease; }
 
-/* line 130, site.css.scss */
+/* line 146, site.css.scss */
+.in-main1 {
+  padding: 2em; }
+
+/* line 150, site.css.scss */
 article {
   animation: fadeIn 4s;
-  padding: 2em;
-  font-size: 0.95em;
+  font-size: 1.15em;
   line-height: 1.4em;
   color: #404040;
   transition: all 0.3s ease; }
 
+/* line 161, site.css.scss */
+.project-article {
+  padding: 0 2em;
+  font-size: 1em;
+  margin-top: -7em; }
+
+/* line 168, site.css.scss */
+main {
+  padding-top: 3.5em; }
+
+/* line 173, site.css.scss */
+.main1 {
+  min-height: 96vh; }
+
+/* line 177, site.css.scss */
+.main2 {
+  min-height: 96vh; }
+  /* line 181, site.css.scss */
+  .main2 .go-to {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    top: -2.5em;
+    left: 2.5em;
+    font-size: 2em;
+    color: white;
+    z-index: -1; }
+    /* line 185, site.css.scss */
+    .main2 .go-to a {
+      margin: 0 auto; }
+  /* line 197, site.css.scss */
+  .main2 img {
+    max-width: 330px;
+    max-height: 103px;
+    margin: 0 auto;
+    margin-bottom: 0.75em;
+    border-radius: 0.75em;
+    cursor: pointer; }
+    /* line 205, site.css.scss */
+    .main2 img:hover {
+      -webkit-filter: blur(3px) brightness(0.85); }
+  /* line 211, site.css.scss */
+  .main2 article {
+    padding-bottom: 2em; }
+
+/* line 217, site.css.scss */
+.main3 .row {
+  margin: 0 auto;
+  padding-left: 2em; }
+  /* line 220, site.css.scss */
+  .main3 .row div {
+    padding-bottom: 2em; }
+/* line 224, site.css.scss */
+.main3 .fa {
+  color: #1F3145; }
+  /* line 226, site.css.scss */
+  .main3 .fa:hover {
+    color: #5f89b7; }
+/* line 230, site.css.scss */
+.main3 a {
+  text-decoration: none;
+  color: #1F3145; }
+  /* line 234, site.css.scss */
+  .main3 a:hover {
+    color: #5f89b7; }
+/* line 239, site.css.scss */
+.main3 .contact-text.first {
+  padding-left: 2em; }
+/* line 242, site.css.scss */
+.main3 .contact-text {
+  position: relative;
+  padding-left: 1.5em;
+  top: -1em; }
+
+/* line 250, site.css.scss */
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default; }
+
+/* line 260, site.css.scss */
+.hovereffect .overlay {
+  display: block;
+  width: 100%;
+  height: 90%;
+  max-width: 330px;
+  min-height: 100px;
+  margin: 0 auto;
+  margin-bottom: 0.75em;
+  border-radius: 0.75em;
+  position: relative;
+  overflow: hidden;
+  top: -7em;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translate(460px, -100px) rotate(180deg);
+  -ms-transform: translate(460px, -100px) rotate(180deg);
+  transform: translate(460px, -100px) rotate(180deg);
+  -webkit-transition: all 0.2s 0.4s ease-in-out;
+  transition: all 0.2s 0.4s ease-in-out; }
+
+/* line 284, site.css.scss */
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+
+/* line 291, site.css.scss */
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.6); }
+  /* line 299, site.css.scss */
+  .hovereffect h2 a {
+    color: #fff; }
+    /* line 301, site.css.scss */
+    .hovereffect h2 a:hover {
+      text-decoration: none; }
+
+/* line 308, site.css.scss */
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 10px 0 0 0;
+  background-color: transparent;
+  -webkit-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  transform: translateY(-200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+/* line 324, site.css.scss */
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff; }
+
+/* line 328, site.css.scss */
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px); }
+
+/* line 338, site.css.scss */
+.hovereffect:hover h2 {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s; }
+
+/* line 346, site.css.scss */
+.hovereffect:hover a.info {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s; }
+
 @media (max-width: 322px) {
-  /* line 141, site.css.scss */
+  /* line 354, site.css.scss */
   .logo {
     opacity: 0; } }
 @media (max-width: 380px) {
-  /* line 147, site.css.scss */
+  /* line 360, site.css.scss */
   .logo {
     top: 1.15em;
     font-size: 1.5em; } }
 @media (min-width: 600px) {
-  /* line 155, site.css.scss */
+  /* line 368, site.css.scss */
   header {
     margin: 0 auto; }
 
-  /* line 160, site.css.scss */
+  /* line 373, site.css.scss */
   .nav ul {
-    margin: 0 auto; }
+    left: 6em; }
 
-  /* line 164, site.css.scss */
-  article {
+  /* line 377, site.css.scss */
+  .in-main1 {
     padding: 2em 8em;
     animation: fadeIn 3s; }
 
-  /* line 170, site.css.scss */
+  /* line 383, site.css.scss */
   .profile-pic img {
     animation: fadeIn 3s;
     position: absolute;
@@ -549,25 +744,32 @@ article {
     border-radius: 50%;
     height: 5em;
     width: 5em;
-    box-shadow: 0px 0px 3px 2px #777; } }
+    box-shadow: 0px 0px 3px 2px #777; }
+
+  /* line 394, site.css.scss */
+  .project-article {
+    padding: 0em 3em; } }
 @media (min-width: 992px) {
-  /* line 184, site.css.scss */
+  /* line 400, site.css.scss */
   .logo {
-    left: 5em; }
+    left: 7em; }
 
-  /* line 188, site.css.scss */
-  .hexagon-wrapper {
-    top: 1em;
-    left: 2em; }
+  /* line 405, site.css.scss */
+  .project-article {
+    margin-top: 0; }
 
-  /* line 192, site.css.scss */
-  article {
-    padding: 2em 10em 2em 20em; }
+  /* line 410, site.css.scss */
+  .nav ul {
+    left: 17em; }
 
-  /* line 195, site.css.scss */
+  /* line 414, site.css.scss */
+  .in-main1 {
+    padding: 2em 10em 2em 17em; }
+
+  /* line 417, site.css.scss */
   .profile-pic {
     float: left; }
-    /* line 197, site.css.scss */
+    /* line 419, site.css.scss */
     .profile-pic img {
       animation: fadeIn 3s;
       position: relative;
@@ -578,6 +780,6 @@ article {
       width: 8em;
       box-shadow: 0px 0px 3px 2px #777; } }
 @media (min-width: 1200px) {
-  /* line 211, site.css.scss */
+  /* line 433, site.css.scss */
   body {
     margin: 0 10%; } }

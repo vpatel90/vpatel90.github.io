@@ -9,7 +9,12 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Vivek Patel</title>
 
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300|Merriweather:400,700,400italic|Roboto+Slab:100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheets/museo_300_macroman/stylesheet.css" type="text/css" charset="utf-8" />
+
 
 
     <link href="/stylesheets/site.css" rel="stylesheet" />
@@ -20,32 +25,121 @@
     <span class="logo">VNP</span>
 
       <ul>
-        <li id="home" class="home"><a href="#">Home</a></li>
-        <li id="projects" class="projects"><a href="#">Projects</a></li>
-        <li id="contact" class="contact"><a href="#">Contact</a></li>
+        <li id="home" class="home"><a href="#main1">Home</a></li>
+        <li id="projects" class="projects"><a href="#main2">Projects</a></li>
+        <li id="contact" class="contact"><a href="#main3">Contact</a></li>
          <div id="underline" class="underline"></div>
 
       </ul>
     </nav>
-
     <div class="spotlight"></div>
+
+<main id="main1" class="main1">
 <header>
   <div><h1>Who Am I?</h1></div>
 </header>
-<main>
   <div class="profile-pic"><img src="https://avatars1.githubusercontent.com/u/6004526?v=3&s=460"></div>
-  <article>
+  <article class="in-main1">
     <p>Hello and welcome to my page! My name is Vivek Patel and I am a web devloper based in Austin, TX.
        I enjoy building all sorts of apps, ranging from small business sites to interactive web games!</p>
     <p>I am a code school graduate from The Iron Yard, where I primarily learned Ruby on Rails. My skillset also includes
-       HTML, CSS, JavaScript, various libraries including, but not limited to, React and jQuery.</p>
+       HTML, CSS, JavaScript, along with use of various libraries such as jQuery, React and others.</p>
     <p>If you feel like I can assist you in anyway, feel free to reach out to me!</p>
+  </article>
+</main>
+
+<main id="main2" class="main2">
+<header>
+  <div><h1>My Work!</h1></div>
+</header>
+  <article class="row">
+  	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 image">
+
+  	<div class="hovereffect">
+  		<img src="/images/bluehair.png" class="img-responsive" alt="Bluehair" />
+  		<div class="overlay">
+  		<h2> <a href="https://github.com/vpatel90/redditapp">GitHub</a> </h2>
+  			<a href="http://blue-hair-app.herokuapp.com" class="info">Live Site</a>
+		</div>
+	</div>
+
+  	</div>
+  	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+  		<article class="project-article">
+  		Blue Hair is a Reddit clone and it was one of the first complete apps I made using Rails. This app's gave me an insight on pagination, creating custom routes, using polymorphic associations and user authentication.
+  		</article>
+  	</div>
+  </article>
+
+  <article class="row">	
+  	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 image">
+  	<div class="hovereffect">
+  	<img src="/images/bba.png" class="img-responsive" alt="Bba" />
+  		<div class="overlay">
+  			<h2> <a href="https://github.com/vpatel90/bba">GitHub</a></h2>
+  			<a href="http://bba-app.herokuapp.com" class="info">Live Site</a>
+  			</div>
+	</div>
+  	</div>
+  	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+  		<article class="project-article">
+  		BBA or Best Burgers of Austin was a group project where I was
+  		the back end developer. My group consisted of two frontend javascript developers and a designer. This showcases a complete rails API with all the necessary CRUD actions necessary for the project. This project was a great experience working with a team full of different skillsets.
+  		</article>
+  	</div>
   </article>
 
 
+  <article class="row">	
+  	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 image">
+  	<div class="hovereffect">
+
+  	<img src="/images/plunder.png" class="img-responsive" alt="Plunder" />
+  		<div class="overlay">
+  		<h2> <a href="https://github.com/vpatel90/Plunder">GitHub</a> </h2>
+  		<a href="http://playplunder.com/about" class="info">Live Site</a>
+  		</div>
+  		</div>
+
+  	</div>
+  	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+  		<article class="project-article">
+  		Plunder is a game based on a board game called Loot. This was
+  		my final project at The Iron Yard coding school. This is a complete multiplayer web-game built in 2 weeks. The game uses a Rails backend and a frontend built almost entirely in React. This project pushed my limits for the two weeks, I learned CSS animations, Rails Jobs, and wrote over a dozen React components.
+  		</article>
+  	</div>
+  </article>
+
 </main>
 
+<main id="main3" class="main3">
+	<header>
+	  <div><h1>Contact</h1></div>
+	</header>
+	<article class="row">
+
+  	<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 image">
+<a href="https://github.com/vpatel90">		<i class="fa fa-4x fa-github" aria-hidden="true"></i> <span class="contact-text first">  VPATEL90</span>
+</a>	</div>
+
+  	<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 image">
+  		
+		<i class="fa fa-4x fa-envelope" aria-hidden="true"></i> <span class="contact-text"><a href="mailto:VNP229@gmail.com">VNP229@gmail.com</a></span>
+	</div>
+
+  	<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 image">
+<a href="https://twitter.com/vpatel90">		<i class="fa fa-4x fa-twitter" aria-hidden="true"></i> <span class="contact-text">@VPATEL90</span>
+</a>	</div>
+
+	</article>
+</main>
+
+
+
   </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
     <script src="/javascripts/all.js"></script>
 
 </html>
