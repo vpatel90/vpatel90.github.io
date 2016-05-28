@@ -445,7 +445,7 @@ body {
   .logo:hover {
     border: solid 1px #F46971;
     color: #F46971;
-    -webkit-transform: scale(1.1) rotate(360deg); }
+    -webkit-transform: scale(1.1) rotateZ(360deg); }
 
 /* line 60, site.css.scss */
 .nav {
@@ -755,11 +755,15 @@ main {
     padding: 2em 6em;
     animation: fadeIn 3s; }
 
-  /* line 410, site.css.scss */
+  /* line 411, site.css.scss */
+  .logo:hover {
+    -webkit-transform: scale(1.1) rotateZ(360deg); }
+
+  /* line 416, site.css.scss */
   .main1 {
     border-right: solid 5em #F46971; }
 
-  /* line 415, site.css.scss */
+  /* line 421, site.css.scss */
   .profile-pic img {
     animation: fadeIn 3s;
     position: absolute;
@@ -770,40 +774,40 @@ main {
     width: 5em;
     box-shadow: 0px 0px 3px 2px #777; }
 
-  /* line 427, site.css.scss */
+  /* line 433, site.css.scss */
   .main2 .project-article {
     padding: 0em 3em;
     font-size: 1.1em; } }
 @media (min-width: 992px) {
-  /* line 438, site.css.scss */
+  /* line 444, site.css.scss */
   .logo {
     left: 7em; }
 
-  /* line 443, site.css.scss */
+  /* line 449, site.css.scss */
   .project-article {
     margin-top: 0; }
 
-  /* line 448, site.css.scss */
+  /* line 454, site.css.scss */
   .nav ul {
     left: 17em; }
 
-  /* line 452, site.css.scss */
+  /* line 458, site.css.scss */
   .in-main1 {
     padding: 2em 4em 2em 17em; }
 
-  /* line 456, site.css.scss */
+  /* line 462, site.css.scss */
   .main1 {
     border-right: solid 7em #F46971; }
 
-  /* line 461, site.css.scss */
+  /* line 467, site.css.scss */
   .main2 article.row {
     max-height: 150px;
     overflow: hidden; }
 
-  /* line 466, site.css.scss */
+  /* line 472, site.css.scss */
   .profile-pic {
     float: left; }
-    /* line 468, site.css.scss */
+    /* line 474, site.css.scss */
     .profile-pic img {
       animation: fadeIn 3s;
       position: relative;
@@ -814,6 +818,6 @@ main {
       width: 8em;
       box-shadow: 0px 0px 3px 2px #777; } }
 @media (min-width: 1200px) {
-  /* line 482, site.css.scss */
+  /* line 488, site.css.scss */
   body {
     margin: 0 10%; } }
