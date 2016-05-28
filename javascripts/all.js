@@ -1,3 +1,5 @@
+//jquery viewport detector
+
 /*!
  * jQuery Smooth Scroll - v1.7.2 - 2016-01-23
  * https://github.com/kswedberg/jquery-smooth-scroll
@@ -315,39 +317,56 @@
 
 var ready;
 
+var isScrolledIntoView = function(elem)
+{
+    var $elem = $(elem);
+    var $window = $(window);
+
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
 
 ready = function() {
 	$('.nav a').smoothScroll();
 
-	var home = document.getElementById("home").children[0];
-	var projects = document.getElementById("projects").children[0];
-	var contact = document.getElementById("contact").children[0];
-	var underline = document.getElementById("underline");
-
+	var slideHome = function(){
+		underline.style.left = "0.7em";
+		underline.style.width = "3em";
+	}
+	var slideProj = function(){
+		underline.style.left = "5.5em";
+		underline.style.width = "4em";
+	}
+	var slideCont = function(){
+		underline.style.left = "11.5em";
+		underline.style.width = "3.7em";
+	}
 	$('.logo').click(function(){
 		underline.style.left = "0.7em";
 		underline.style.width = "3em";
 	});
-	home.addEventListener('click', function(){
-		underline.style.left = "0.7em";
-		underline.style.width = "3em";
+
+
+	$(window).scroll(function () {
+      var main1head = $('#main1head')
+      var main2head = $('#main2head')
+      var main3head = $('#main3head')
+
+      if (isScrolledIntoView(main1head)){
+        slideHome();
+      }else if (isScrolledIntoView(main2head)){
+        slideProj();
+      }else if (isScrolledIntoView(main3head)){
+        slideCont();
+      }
 	});
 
-	projects.addEventListener('click', function(){
-		underline.style.left = "5.5em";
-		underline.style.width = "4em";
 
-	});
-
-	contact.addEventListener('click', function(){
-		underline.style.left = "11.5em";
-		underline.style.width = "3.7em";
-
-	});
-
-	$('.image').mouseover(function(target) {
-		console.log(target.toElement);
-	});
 }
 
 $(document).ready(ready);
