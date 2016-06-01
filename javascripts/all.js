@@ -346,10 +346,6 @@ ready = function() {
 		underline.style.left = "11.5em";
 		underline.style.width = "3.7em";
 	}
-	$('.logo').click(function(){
-		underline.style.left = "0.7em";
-		underline.style.width = "3em";
-	});
 
 
 	$(window).scroll(function () {
